@@ -1,2 +1,2 @@
-# Micro-Frontends, the future is now. ILC(Isomorphic Layout Composer).
+# Micro-Frontends, the future is now. <br />ILC(Isomorphic Layout Composer).
 ### Volodymyr Makukha
