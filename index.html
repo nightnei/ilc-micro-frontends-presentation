@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Micro-Frontends, the future is now. ILC(Isomorphic Layout Composer)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
@@ -9,202 +9,315 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        .slide::after {
+            z-index: 100;
+        }
+        video:not(.clear),
+        .fillHeight {
+            height: calc(100% - 130px);
+            position: relative;
+            z-index: 99;
+            margin: 0 auto;
+            display: block;
+        }
+        .fillWidth {
+            width: 100%;
+            position: relative;
+            z-index: 99;
+            display: block;
+        }
+        figcaption {
+            color: #ccc;
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .width100 {
+            width: 100%;
+        }
     </style>
 </head>
 <body class="shower list">
-
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Micro-Frontends, the future is now.</h1>
+        <p>ILC(Isomorphic Layout Composer) - complete solution for Micro Frontends composition into SPA with SSR support</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
+    <section class="slide" id="cover2">
+        <h2>Micro-Frontends,<br />the future is now.</h2>
+        <div class="ilcLogo">
+            <h3>Isomorphic Layout Composer</h3>
+            <img src="pictures/puzzle.jpg" />
+        </div>
+
         <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
+            #cover2 {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                background: url("pictures/logoWoT.png") -350px -650px no-repeat #313043;
+                padding-bottom: 30px;
+            }
+
+            #cover2 h2 {
+                margin: 0 80px 50px 0;
                 text-align: center;
                 font-size: 70px;
+                color: #fff;
+            }
+            #cover2 .ilcLogo {
+                flex: 0 0 1px;
+                font-size: 85px;
             }
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
+            #cover2 h3 {
+                font-size: 24px;
+                margin: 0;
+                color: #fff;
             }
 
-            #cover p a {
-                color: white;
+            #cover2 img {
+                width: 300px;
             }
         </style>
     </section>
 
     <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+        <h2>Володимир Макуха</h2>
+        <div style="display: flex; align-items: center; width: 100%;">
+            <div style="flex: 1 0 auto;">
+                <ol>
+                    <li>~10 років досвіду</li>
+                    <li>KharkivCSS організатор</li>
+                    <li>T-shaped Conference організатор</li>
+                    <li>RnD Frontend Engineer в Namecheap</li>
+                </ol>
+            </div>
+            <div style="flex: 0 0 250px">
+                <img src="pictures/volodymyrMakukha.jpg" style="width: 100%;">
+            </div>
         </div>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
+        <h2>&nbsp;</h2>
+        <img src="pictures/dan.png" style="width: 100%;">
     </section>
 
     <section class="slide">
-        <h2>Serious citations</h2>
+        <h2>Про що будемо говорити</h2>
+        <ol>
+            <li>Монолітний фронтенд</li>
+            <li>Micro-Frontends</li>
+            <li><a href="https://github.com/namecheap/ilc" target="_blank">(ILC)Isomorphic Layout Composer</a></li>
+        </ol>
+    </section>
+
+    <section class="slide" style="display: flex; justify-content: center; align-items: center;">
+        <h2 style="font-size: 100px; margin-bottom: 80px;">Монолітний фронтенд</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Монолітний фронтенд</h2>
+        <div class="columns two" style="font-size: 16px">
+            <div>
+                <div><b>Переваги</b></div>
+                <ol>
+                    <li>Все в одному місці</li>
+                    <li>Легко деплоїтися</li>
+                    <li>Легко розвернути локально проект</li>
+                    <li>Легко писати end-to-end тести</li>
+                </ol>
+            </div>
+            <div class="next">
+                <div><b>Недоліки</b></div>
+                <ol>
+                    <li>Повільні цикли розробки, тому релізи відбуваються рідко і важко</li>
+                    <li>Редеплой всього проекту при найменьшому апдейті</li>
+                    <li>Сайд-ефекти - перед деплоєм потрібно тестувати весь проект</li>
+                    <li>Великі/повільні CI-білди</li>
+                    <li>Якщо сервіс падає - то повністю</li>
+                    <li>Конфлікти версій бібліотек</li>
+                    <li>Важко поміняти технологію/фреймворк/ітд</li>
+                    <li>Довга адаптація нових співробітників</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Проблема сучасного фронтенду - Моноліт</h2>
+        <video autoplay loop src="videos/monolith.mp4" />
+    </section>
+
+    <section class="slide" style="display: flex; justify-content: center; align-items: center;">
+        <h2 style="font-size: 130px; margin-bottom: 80px;">Microservices</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Microservices Wiki</h2>
         <figure>
             <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+                <p>Microservices is a software development technique —a variant of the service-oriented architecture (SOA) structural style— that arranges an application as a collection of loosely coupled services.</p>
             </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+            <figcaption>https://en.wikipedia.org/wiki/Microservices</figcaption>
         </figure>
     </section>
 
     <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Inner navigation</h2>
+        <h2>Microservices architecture</h2>
         <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+            <li>Легкі в обслуговуванні і тестуванні</li>
+            <li>Слабо пов'язані між собою</li>
+            <li>Незалежно розгортаються</li>
+            <li>Належать маленьким командам</li>
         </ol>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+    <section class="slide" style="display: flex; justify-content: center; align-items: center;">
+        <h2 style="font-size: 130px; margin-bottom: 80px;">Micro-Frontends</h2>
     </section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
+    <section class="slide">
+        <h2>Micro-Frontends</h2>
+        <p>Термін Micro Frontends вперше з'явився в <a href="https://www.thoughtworks.com/radar/techniques/micro-frontends" target_blank>ThoughtWorks Technology Radar</a> в кінці 2016 року.</p>
+        <figure>
+            <blockquote>
+                <p>An architectural style where independently deliverable frontend applications are composed into a greater whole</p>
+            </blockquote>
+            <figcaption>Martin Fowler</figcaption>
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Micro-Frontends</h2>
+        <img class="fillHeight" src="pictures/browser.png">
+    </section>
+
+    <section class="slide">
+        <h2 style="line-height: 1; font-size: 30px;">Я прийшов розпровідати бізнесу, що нам потрібно добавити <br />ще одну нову-модну-молодьожну технологію/фреймворк в проект</h2>
+        <video autoplay loop src="videos/newTechnology.mp4" />
+    </section>
+
+    <section class="slide">
+        <h2>Я добавив новий фреймворк</h2>
+        <video autoplay loop src="videos/newFramework.mp4" />
+    </section>
+
+    <section class="slide">
+        <h2>Завдяки Micro-Frontends в нас:</h2>
+        <ol>
+            <li>Релізи будуть частішими і не такими болючими</li>
+            <li class="next">Люди/команди будуть меньше пов'язані між собою(незалежна розробка, деплой, автотести, мануальні тести ітд)</li>
+        </ol>
+    </section>
+    <section class="slide">
+        <h2>Пуш в мастер 2-х великих комітів</h2>
+        <video autoplay loop src="videos/conflicts.mp4" />
+    </section> 
+    <section class="slide">
+        <h2>Завдяки Micro-Frontends в нас:</h2>
+        <ol>
+            <li>Релізи будуть частішими і не такими болючими</li>
+            <li>Люди/команди будуть меньше пов'язані між собою(незалежна розробка, деплой, автотести, мануальні тести ітд)</li>
+            <li>Можливість різним команам юзати різні фреймворки і оновлювати версії</li>
+            <li class="next">Простіше і бистріше вносити правки, шукати баги і ботлнеки</li>
+            <li class="next">Як наслідок - більш стабільний продукт, економія часу і грошей.</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Деплой Моноліта VS Мікросервісів</h2>
+        <div>Деплой моноліта, в порівнянні з мікросервісами - це поїзд з великої кількості комітів, який ми чекаємо дуже довго, доки всі люди/команди закінчать свої таски, деплоїмо раз в наприклад 2 місяці і... </div>
+    </section>
+    <section class="slide">
+        <h2>Release, 3..2..1</h2>
+        <video autoplay loop src="videos/release.mp4" />
+    </section>
+
+    <section class="slide">
+        <h2>Micro-Frontends</h2>
+        <img class="fillWidth" src="pictures/deployment.png">
+        <figcaption>https://martinfowler.com/articles/micro-frontends/deployment.png</figcaption>
+    </section>
+
+    <section class="slide">
+        <img class="fillWidth" src="pictures/cover.png" alt="ILC(Isomorphic Layout Composer)">
+        <p style="font-size: 23px;">ILC - complete solution for Micro Frontends composition into SPA with SSR support.</p>
+        <a href="https://github.com/namecheap/ilc" target="_blank"><b>https://github.com/namecheap/ilc</b></a>
+    </section>
+
+    <section class="slide">
+        <h2>Isomorphic Layout Composer</h2>
+        <img class="fillHeight" src="pictures/ILC-Architecture.svg">
+    </section>
+
+    <section class="slide">
+        <h2>Registry UI</h2>
+        <video controls src="videos/registryUI.mp4" />
+    </section>
+
+    <section class="slide">
+        <h2>ILC Demo Apps</h2>
+        <ol>
+            <li><a href="http://demo.microfrontends.online/" target="_blank">http://demo.microfrontends.online/</a></li>
+            <li><a href="https://github.com/namecheap/ilc/blob/master/docs/stepbystep/react/lesson1.md" target="_blank">Прості уроки на 5-10хв кожний</a></li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2><a href="https://github.com/namecheap/ilc/blob/master/docs/develop_at_production.md" target="_blank">Розробка відразу на продакшині</a></h2>
+        <video controls src="videos/devAtProd.mp4" />
+    </section>
+
+    <section class="slide">
+        <h2>Monolith VS Micro-Frontends</h2>
+        <div style="display: flex;">
+            <div style="flex: 0 0 43%; margin-right: 5%;">
+                <b>Monolith</b>
+                <video class="clear width100" autoplay loop src="videos/monolith.mp4"></video>
+            </div>
+            <div style="flex: 0 1 100%;">
+                <b>Micro-Frontends</b>
+                <video class="clear width100" autoplay loop src="videos/microfrontends.mp4"></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Залишились питання?</h2>
+        <div style="display: flex; align-items: center; width: 100%;">
+            <div style="flex: 1 0 auto;">
+                <!-- <b>Володимир Макуха</b> -->
+                <ol>
+                    <li><a href="https://t.me/NightNei" target="_blank">https://t.me/NightNei</a></li>
+                    <li><a href="https://www.facebook.com/NightNei" target="_blank">https://www.facebook.com/NightNei</a></li>
+                    <li><a href="https://twitter.com/NightNei" target="_blank">https://twitter.com/NightNei</a></li>
+                    <li><a href="mailto:nei.css@gmail.com">nei.css@gmail.com</a></li>
+                </ol>
+            </div>
+            <div style="flex: 0 0 200px">
+                <img src="pictures/volodymyrMakukha.jpg" style="width: 100%;">
+            </div>
+        </div>
+        <br />
+        <div>Буду вдячний за
+            "<svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16"
+                version="1.1" width="14" aria-hidden="true">
+                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z">
+                </path>
+            </svg>"
+            на github :) --> <b><a href="https://github.com/namecheap/ilc" target="_blank">https://github.com/namecheap/ilc</a></b>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Дякую за увагу</h2>
+        <video autoplay loop src="videos/94805e0b-bb9e-4bfd-9780-45d967a79a58.mp4" />
+    </section>
 
     <div class="progress"></div>
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
 </body>
 </html>
