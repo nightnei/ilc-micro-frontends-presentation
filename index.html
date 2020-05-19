@@ -35,6 +35,21 @@
         .width100 {
             width: 100%;
         }
+        body {
+            /* border-left: 2px solid #000;
+            border-right: 2px solid #000; */
+        }
+        .slide {
+            background: #313043;
+            color: #fff;
+        }
+        .slide h2,
+        .slide li::before {
+            color: #fff;
+        }
+        .slide a {
+            color: #a3d1ff;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -212,7 +227,7 @@
         </ol>
     </section>
     <section class="slide">
-        <h2>Пуш в мастер 2-х великих комітів</h2>
+        <h2>Два великі пулреквеста ідуть в мастер</h2>
         <video autoplay loop src="videos/conflicts.mp4" />
     </section> 
     <section class="slide">
@@ -232,7 +247,36 @@
     </section>
     <section class="slide">
         <h2>Release, 3..2..1</h2>
+        <div class="cloud">Вася, сьогодні п'ятниця!</div>
         <video autoplay loop src="videos/release.mp4" />
+        <style>
+            .cloud {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 100;
+                background: #fff;
+                padding: 0 10px;
+                border: 1px solid #000;
+                color: #000;
+                border-radius: 10px;
+                margin: 90px 0 0 -80px;
+            }
+            .cloud::before {
+                content: ''; 
+                display: block;
+                width: 0;
+                height: 0;
+                border-width: 0 10px 170px 10px;
+                border-color: transparent transparent #fff transparent;
+                border-style: solid;
+                position: absolute;
+                left: 50%;
+                bottom: 100%;
+                margin: 0 0 -15px 5px;
+                transform: rotate(15deg);
+            }
+        </style>
     </section>
 
     <section class="slide">
@@ -301,14 +345,15 @@
             </div>
         </div>
         <div style="padding-top: 20px;"><b>Буду вдячний за
-            "<svg height="16" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16"
-                version="1.1" width="14" aria-hidden="true">
-                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z">
+            <a href="https://github.com/namecheap/ilc" target="_blank" style="background: none; color: #fff;">
+                "<svg height="30" style="vertical-align: middle; fill: #0f0;" class="octicon octicon-star v-align-text-bottom" vertical_align="text_bottom" viewBox="0 0 14 16" version="1.1" width="30" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z">
                 </path>
-            </svg>"
-            на github :)</b> --> <a href="https://github.com/namecheap/ilc" target="_blank">https://github.com/namecheap/ilc</a>
+                </svg>"
+            </a>
+            на github </b>: <a href="https://github.com/namecheap/ilc" target="_blank">https://github.com/namecheap/ilc</a>
         </div>
-        <div><b>Презентація</b> - <a href="https://nightnei.github.io/ilc-micro-frontends-presentation" target="_blank">https://nightnei.github.io/ilc-micro-frontends-presentation</a></div>
+        <div><b>Презентація</b>: <a href="https://nightnei.github.io/ilc-micro-frontends-presentation" target="_blank">https://nightnei.github.io/ilc-micro-frontends-presentation</a></div>
     </section>
 
     <section class="slide">
